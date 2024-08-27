@@ -58,13 +58,10 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 3. Realiza tus modificaciones y asegúrate de que los tests pasen.
 4. Envía un pull request describiendo los cambios que has realizado.
 
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Contacto
 
-Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en contactarme a través de [tu_email@example.com](mailto:tu_email@example.com).
+Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en contactarme a través de [tu_email@example.com](mailto:armandomaximinoob@hotmail.com).
 
 ---
 
