@@ -61,7 +61,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 ## Contacto
 
-Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en contactarme a través de [tu_email@example.com](mailto:armandomaximinoob@hotmail.com).
+Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en contactarme a través de armandomaximinoob@hotmail.com
 
 ---
 
