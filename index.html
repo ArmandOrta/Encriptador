@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="logo de alura" class="header__imagen">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <textarea placeholder="Ingrese su texto aquí" rows="14" class="presentacion__contenido__input"></textarea>
+            <p class="presentacion__contenido__advertencia">ingresa solo letras minusculas</p>
+            <div class="presentacion__contenido__botones">
+                <button class="presentacion__contenido__botones__encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="presentacion__contenido__botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__desencriptado">
+            <img class="presentacion__desencriptado__imagen" src="./assets/Muñeco.png" alt="hombre buscando con lupa" id="placeholderImage">   
+            <div class="presentacion__desencriptado__encriptado" id="outputText">Ningún mensaje fue encontrado</div>         
+            <button class="presentacion__desencriptado__botones__copiar" onclick="copiar()" id="copyButton" style="display:none;">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Armando Maximino Orta Bonilla</p>
+    </footer>
+    <script src="./functions/encrypt.js"></script>
+</body>
+</html>
