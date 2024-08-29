@@ -3,6 +3,7 @@ let textarea = document.querySelector(".presentacion__contenido__input");
 let mensaje = document.getElementById("outputText");
 let placeholderImage = document.getElementById("placeholderImage");
 let copyButton = document.getElementById("copyButton");
+let textBlock = document.getElementById("blockText");
 
 /* Llaves de encriptación
 La letra "e" es convertida para "enter"
@@ -38,7 +39,8 @@ function encriptar() {
         mensaje.textContent = 'El texto debe contener solo letras minúsculas y espacios.';
         placeholderImage.style.display = 'block';
         copyButton.style.display = 'none';
-        textarea.value = "";
+        textBlock.style.display = 'block';
+        textarea.value = "";        
         return;
     }
     
@@ -48,10 +50,12 @@ function encriptar() {
         placeholderImage.style.display = 'block';
         mensaje.textContent = 'Ningún mensaje fue encontrado';
         copyButton.style.display = 'none';
+        textBlock.style.display = 'block';
     } else {
         placeholderImage.style.display = 'none';
         mensaje.textContent = txEncriptado;
         copyButton.style.display = 'block';
+        textBlock.style.display = 'none';
     }
 
     textarea.value = "";
@@ -66,6 +70,7 @@ function desencriptar() {
         placeholderImage.style.display = 'block';
         copyButton.style.display = 'none';
         textarea.value = "";
+        textBlock.style.display = 'block';
         return;
     }
     
@@ -75,10 +80,12 @@ function desencriptar() {
         placeholderImage.style.display = 'block';
         mensaje.textContent = 'Ningún mensaje fue encontrado';
         copyButton.style.display = 'none';
+        textBlock.style.display = 'block';
     } else {
         placeholderImage.style.display = 'none';
         mensaje.textContent = txDesencriptado;
         copyButton.style.display = 'block';
+        textBlock.style.display = 'none';
     }
 
     textarea.value = "";
@@ -99,6 +106,8 @@ function copiar() {
             copyButton.style.display = 'none';
             // Opcional: muestra una alerta de éxito
             alert("Texto copiado al portapapeles");
+            //Muestra el texto blockText nuevamente
+            textBlock.style.display = 'block';
 
             // Pega el texto en el área de texto para permitir desencriptar
             textarea.value = textoACopiar;
@@ -107,4 +116,3 @@ function copiar() {
             console.log('Algo salió mal al copiar el texto: ', err);
         });
 }
-

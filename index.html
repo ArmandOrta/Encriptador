@@ -7,20 +7,24 @@
 </head>
 <body>
     <header class="header">
-        <img src="./assets/Logo.png" alt="logo de alura" class="header__imagen">
+        <!-- <img src="./assets/Logo.png" alt="logo de alura" class="header__imagen"> -->
     </header>
     <main class="presentacion">
         <section class="presentacion__contenido">
-            <textarea placeholder="Ingrese su texto aquí" rows="14" class="presentacion__contenido__input"></textarea>
-            <p class="presentacion__contenido__advertencia">ingresa solo letras minusculas</p>
+            <!-- <img src="./assets/Logo.png" alt="logo de alura" class="header__imagen"> -->
+            <textarea placeholder="Ingrese su texto aquí" rows="20" class="presentacion__contenido__input" id="inputText"></textarea>
+            <div class="presentacion__contenido__advertencia">Sólo letras minúsculas y sin acentos</div>
             <div class="presentacion__contenido__botones">
                 <button class="presentacion__contenido__botones__encriptar" onclick="encriptar()">Encriptar</button>
                 <button class="presentacion__contenido__botones__desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="presentacion__desencriptado">
-            <img class="presentacion__desencriptado__imagen" src="./assets/Muñeco.png" alt="hombre buscando con lupa" id="placeholderImage">   
-            <div class="presentacion__desencriptado__encriptado" id="outputText">Ningún mensaje fue encontrado</div>         
+            <img class="presentacion__desencriptado__imagen" src="./assets/Muñeco.png" alt="hombre buscando con lupa" id="placeholderImage">
+            <div class="presentacion__desencriptado__encriptado" id="outputText">
+                Ningún mensaje fue encontrado
+            </div>
+            <div class="presentacion__desencriptado__encriptado__texto" id="blockText">ingrese el texto que desee encriptar o desencriptar</div>
             <button class="presentacion__desencriptado__botones__copiar" onclick="copiar()" id="copyButton" style="display:none;">Copiar</button>
         </section>
     </main>
